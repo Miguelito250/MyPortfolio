@@ -1,0 +1,47 @@
+<section
+  id="section-about"
+  class="grid items-center md:grid-cols-2 bg-tuna-800"
+>
+  <article>
+    <h2 class="text-3xl font-semibold">Sobre mí</h2>
+    <p class="p-6 mt-5 text-lg leading-8 text-white">
+      ¡Hola! Soy <b class="text-purple-400">Miguel Ángel Medina Cardona</b>,
+      tengo <b class="text-yellow-400">20 años</b> y llevo desarrollando mi
+      pasión por la <b class="text-teal-400">programación</b> desde
+      <b class="text-yellow-400">2021</b>. Mi camino en este mundo comenzó en el
+      <b class="text-teal-400">colegio</b>, y en
+      <b class="text-yellow-400">2022</b> decidí dar el siguiente paso
+      estudiando la <b class="text-teal-400">tecnología</b> de
+      <b class="text-teal-400">Análisis y Desarrollo de Software</b>. Desde
+      entonces, he estado inmerso en el aprendizaje de
+      <b class="text-teal-400">tecnologías clave</b> y, en
+      <b class="text-yellow-400">2023</b>, tuve la oportunidad de comenzar mis
+      primeros proyectos como <b class="text-teal-400">programador junior</b>.
+      Me encanta enfrentar <b class="text-teal-400">nuevos desafíos</b> y
+      aprender de cada experiencia, ya que cada proyecto me ha permitido mejorar
+      mis <b class="text-teal-400">habilidades</b> y perfeccionar mi enfoque en
+      el <b class="text-teal-400">desarrollo web</b>. Estoy constantemente
+      buscando maneras de <b class="text-teal-400">optimizar mi código</b> y
+      mejorar la <b class="text-teal-400">experiencia del usuario</b>,
+      manteniéndome al día con las últimas
+      <b class="text-teal-400">tendencias del sector</b>. Cuando no estoy
+      <b class="text-teal-400">programando</b>, disfruto explorando
+      <b class="text-teal-400">nuevas tecnologías</b>. Estoy comprometido a
+      seguir creciendo como <b class="text-teal-400">desarrollador</b> y
+      contribuir a proyectos que hagan la
+      <b class="text-teal-400">diferencia</b>.
+    </p>
+  </article>
+  <article class="mt-10 ml-12 md:mt-0">
+    <h3 class="text-2xl font-semibold">Key Skills</h3>
+    <div class="mt-5 text-xl"> 
+      <ul class="grid grid-cols-2 text-white">
+        @for (item of listKeySkills; track $index) {
+        <li class="mb-5">
+          <app-skills [skill]="item"></app-skills>
+        </li>
+        }
+      </ul>
+    </div>
+  </article>
+</section>
