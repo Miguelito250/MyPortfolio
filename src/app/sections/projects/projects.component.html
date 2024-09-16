@@ -3,6 +3,33 @@
   <p class="mt-5">Check out some of my recent web development projects.</p>
 
   <article class="mt-10 md:flex">
-    <app-vertical-card></app-vertical-card>
+    @for (project of myProjects; track $index) {
+
+    <app-vertical-card>
+      <div class="h-48">
+        <div
+          class="flex items-center justify-center w-full h-40 px-8 rounded-md bg-cod-gray-900"
+        >
+        @for (urlImg of project.urlImg; track $index) {
+          @if (project.urlImg) {
+            <img [src]="urlImg" alt="">
+          }@else {
+            <img src="" alt="Photo project" />
+          }
+        }
+        </div>
+      </div>
+
+      <h3 class="text-xl font-semibold">{{project.nameProject}}</h3>
+      <p class="mt-2 text-quill-gray-200">{{project.Description}}</p>
+
+      @if (project.urlWeb) {
+        <div class="flex justify-end mt-4">
+          <a [href]="project.urlWeb" class="px-5 py-1 rounded-md bg-mercury-200">Ver projecto</a>
+        </div>
+
+      }
+    </app-vertical-card>
+    }
   </article>
 </section>

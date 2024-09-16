@@ -31,11 +31,11 @@ export class AboutComponent {
         nameSkill: '.NET',
       },
       {
-        skillIcon: 'devicon-java-plain colored',
+        skillIcon: 'devicon-java-plain',
         nameSkill: 'Java',
       },
       {
-        skillIcon: 'devicon-laravel-plain colored',
+        skillIcon: 'devicon-laravel-plain',
         nameSkill: 'Laravel',
       },
 

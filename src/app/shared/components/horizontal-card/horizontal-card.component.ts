@@ -9,7 +9,5 @@ import { SkillsComponent } from "../skills/skills.component";
   styleUrl: './horizontal-card.component.scss'
 })
 export class HorizontalCardComponent {
-  @Input()
-  public specialty: string = '';
   
 }
