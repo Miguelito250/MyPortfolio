@@ -1,13 +1,22 @@
 import { Component, Input } from '@angular/core';
-import { SkillsComponent } from "../skills/skills.component";
+import { ISkills } from '../../interfaces/ISkills.inteface';
 
 @Component({
   selector: 'app-horizontal-card',
   standalone: true,
-  imports: [SkillsComponent],
+  imports: [],
   templateUrl: './horizontal-card.component.html',
   styleUrl: './horizontal-card.component.scss'
 })
 export class HorizontalCardComponent {
-  
+  @Input()
+  public skill: ISkills;
+
+  constructor(){
+    this.skill = {
+      skillIcon: "SIN ICONO",
+      nameSkill: "SIN NOMBRE"
+    }
+  }
+
 }

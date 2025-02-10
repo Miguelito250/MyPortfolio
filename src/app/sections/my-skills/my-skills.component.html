@@ -1,60 +1,10 @@
-<section id="section-skills" class="bg-tuna-800">
-  <h2 class="text-3xl font-semibold">Mis habilidades</h2>
-  <p class="mb-4">
-    A lo largo de mi carrera, he tenido la oportunidad de trabajar con una
-    variedad de tecnologías que me han permitido desarrollar
-    <strong class="text-indigo-400">aplicaciones web eficientes</strong> y
-    escalables. Aquí te presento algunas de las principales herramientas y
-    lenguajes en los que me he especializado:
-  </p>
-
-  <h3 class="text-2xl font-semibold mb-2">Frontend:</h3>
-  <p class="mb-4">
-    <strong class="text-indigo-400">TailwindCSS</strong>: Me ayuda a crear
-    interfaces atractivas y completamente personalizables de manera rápida y
-    eficiente.<br />
-    <strong class="text-indigo-400">Bootstrap</strong>: Herramienta fundamental
-    para el desarrollo de sitios web responsive y bien estructurados.<br />
-    <strong class="text-indigo-400">JavaScript</strong> y
-    <strong class="text-indigo-400">TypeScript</strong>: Lenguajes clave para
-    crear interactividad en las aplicaciones web, optimizando tanto la
-    experiencia de usuario como la lógica del lado del cliente.
-  </p>
-
-  <h3 class="text-2xl font-semibold mb-2">Backend:</h3>
-  <p class="mb-4">
-    <strong class="text-indigo-400">C#</strong>,
-    <strong class="text-indigo-400">Java</strong>, y
-    <strong class="text-indigo-400">PHP</strong>: Lenguajes que me permiten
-    construir el lado servidor de aplicaciones robustas, garantizando la
-    integración perfecta entre el frontend y backend.<br />
-    <strong class="text-indigo-400">SQL</strong>: Mi experiencia en bases de
-    datos me permite manejar la persistencia de datos de manera segura y
-    eficiente.
-  </p>
-
-  <h3 class="text-2xl font-semibold mb-2">Otros:</h3>
-  <p class="mb-4">
-    <strong class="text-indigo-400">GitHub</strong>: Plataforma que uso para
-    control de versiones y colaboración en proyectos.<br />
-    <strong class="text-indigo-400">Cypress</strong>: Una herramienta clave para
-    asegurar la calidad de las aplicaciones mediante pruebas automatizadas
-    end-to-end.
-  </p>
-
-  <article class="mt-5 md:grid grid-cols-3">
-    @for (typeSpecialty of mySkills; track $index) {
-    <app-horizontal-card>
-      <h3 class="text-xl font-semibold">{{ typeSpecialty.specialty }}</h3>
-
-      <ul class="ml-1 mt-7 text-white text-lg grid grid-cols-2 gap-x-5 gap-y-3">
-        @for (mySkills of typeSpecialty.skills; track $index) {
-        <li>
-          <app-skills [skill]="mySkills"></app-skills>
-        </li>
-        }
-      </ul>
-    </app-horizontal-card>
+<section id="section-skills">
+  <h2>Mis Habilidades</h2>
+  <article class="w-full h-36 flex flex-wrap gap-10 mt-2">
+    @for (skill of mySkills; track $index) {
+      <div class="min-w-52 h-full">
+        <app-horizontal-card [skill]="skill"></app-horizontal-card>
+      </div>
     }
   </article>
 </section>

@@ -3,6 +3,27 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --primary: #2d1b69;
+  --secondary: #8a2be2;
+  --accent: #ff1493;
+  --background: #0a0a1f;
+  --text: #ffffff;
+}
+
+html{
+  scroll-snap-type: y mandatory;
+}
+
+section{
+  scroll-snap-align: center;
+  height: 100dvh;
+}
+
+body{
+  background-color: var(--background);
+}
+
 section {
   padding-left: 1.25rem /* 20px */;
   padding-right: 1.25rem /* 20px */;

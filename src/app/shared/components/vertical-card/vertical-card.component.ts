@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { IProjects } from '../../interfaces/IProjects.interface';
 
 @Component({
   selector: 'app-vertical-card',
@@ -8,5 +9,14 @@ import { Component } from '@angular/core';
   styleUrl: './vertical-card.component.scss'
 })
 export class VerticalCardComponent {
-
+  @Input()
+  public project: IProjects;
+  
+  constructor(){
+    this.project = {
+      urlImg: [],
+      nameProject: "NO HAY NOMBRE",
+      description: "SIN DESCRIPCION"
+    }
+  }
 }

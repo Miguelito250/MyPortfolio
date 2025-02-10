@@ -1,26 +1,22 @@
 import { Component } from '@angular/core';
-import { VerticalCardComponent } from "../../shared/components/vertical-card/vertical-card.component";
+import { VerticalCardComponent } from '../../shared/components/vertical-card/vertical-card.component';
+import { IProjects } from '../../shared/interfaces/IProjects.interface';
 
 @Component({
   selector: 'app-projects',
   standalone: true,
   imports: [VerticalCardComponent],
   templateUrl: './projects.component.html',
-  styleUrl: './projects.component.scss'
+  styleUrl: './projects.component.scss',
 })
 export class ProjectsComponent {
+  private _pachosPath: string = '../../../assets/projects/pachos/';
   public myProjects: IProjects[] = [
     {
-      urlImg: [],
-      nameProject: 'Wikipedia',
-      Description:'Proyecto educativo para una persona tercera, fué desarrollado con Java JPA con N capas y desplegado en una maquina virtual VBox, cuenta con persistencia de datos hasta que se cierra la aplicación'
-    }
-  ]
-}
-
-interface IProjects{
-  urlImg: string[],
-  nameProject: string,
-  Description: string,
-  urlWeb?: string,
+      urlImg: [`${this._pachosPath}Informes.png`],
+      nameProject: 'Pach-OS',
+      description:
+        'Software administrativo para una Pizzeria y Bar llamada Pachito-ché, este cuenta con sistema para registrar usuarios, compras de insumos del local, sistema de ventas descontando insumos del inventario segun una receta de producto registrada anteriormente en el sistema.',
+    },
+  ];
 }

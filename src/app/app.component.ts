@@ -10,7 +10,6 @@ import { MySkillsComponent } from './sections/my-skills/my-skills.component';
   selector: 'app-root',
   standalone: true,
   imports: [
-    RouterOutlet,
     NavbarComponent,
     AboutComponent,
     HomeComponent,

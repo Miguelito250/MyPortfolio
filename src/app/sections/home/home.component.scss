@@ -1,3 +1,19 @@
-p, img, span, h1 {
-  color: white;
+section {
+  background: linear-gradient(45deg, var(--primary), var(--secondary));
+}
+
+h1 {
+  font-size: 4rem;
+  margin-bottom: 20px;
+  background: linear-gradient(to right, var(--accent), #ff69b4);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+p {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  font-weight: bolder;
+  text-shadow: #000 1px 4px 15px;
+  color: var(--text)
 }
