@@ -1,8 +1,8 @@
-<section id="section-projects">
+<section id="section-projects" class="text-center md:text-start">
   <h2>Mis Proyectos</h2>
-  <article>
+  <article class="md:grid grid-cols-3 gap-11 flex flex-col">
     @for (item of myProjects; track $index) {
-      <app-vertical-card [project]="item" ></app-vertical-card>
+      <app-vertical-card [project]="item"></app-vertical-card>
     }
   </article>
 </section>

@@ -1,6 +1,6 @@
-<section id="section-skills">
+<section id="section-skills" class="text-center md:text-start">
   <h2>Mis Habilidades</h2>
-  <article class="w-full h-36 flex flex-wrap gap-10 mt-2">
+  <article class="w-full md:h-36 flex flex-wrap justify-center md:justify-start gap-10 mt-2">
     @for (skill of mySkills; track $index) {
       <div class="min-w-52 h-full">
         <app-horizontal-card [skill]="skill"></app-horizontal-card>
