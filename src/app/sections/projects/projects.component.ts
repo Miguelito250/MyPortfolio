@@ -18,11 +18,5 @@ export class ProjectsComponent {
       description:
         'Software administrativo para una Pizzeria y Bar llamada Pachito-ché, este cuenta con sistema para registrar usuarios, compras de insumos del local, sistema de ventas descontando insumos del inventario segun una receta de producto registrada anteriormente en el sistema.',
     },
-    {
-      urlImg: [`${this._pachosPath}Informes.png`],
-      nameProject: 'Pach-OSs',
-      description:
-        'Software administrativo para una Pizzeria y Bar llamada Pachito-ché, este cuenta con sistema para registrar usuarios, compras de insumos del local, sistema de ventas descontando insumos del inventario segun una receta de producto registrada anteriormente en el sistema.',
-    },
   ];
 }
