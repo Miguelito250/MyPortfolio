@@ -12,6 +12,32 @@ h1 {
 p {
   margin-bottom: 30px;
   font-weight: bolder;
-  text-shadow: #000 1px 4px 15px;
+  text-shadow: #000 1px 2px 5px;
   color: var(--text)
+}
+
+span {
+  display: block;
+  font-family: monospace;
+  font-size: 1.5rem;
+  white-space: nowrap;
+  border-right: 2px solid; /* Simula el cursor */
+  width: 44ch;
+  overflow: hidden;
+
+  animation: typing 5s steps(44), blink .5s infinite step-end alternate;
+}
+
+/* Efecto de escribir */
+@keyframes typing {
+  from {
+    width: 0;
+  } 
+}
+
+/* Cursor parpadeante */
+@keyframes blink {
+  50% {
+    border-color: transparent; 
+  }
 }

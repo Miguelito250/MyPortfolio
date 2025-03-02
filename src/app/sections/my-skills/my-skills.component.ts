@@ -10,7 +10,6 @@ import { ISkills } from '../../shared/interfaces/ISkills.inteface';
   styleUrl: './my-skills.component.scss',
 })
 export class MySkillsComponent {
-  public specialty: string = 'Frontend';
   public mySkills: ISkills[] = [
     {
       skillIcon: 'devicon-tailwindcss-original colored',

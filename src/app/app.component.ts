@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
 import { NavbarComponent } from './shared/components/navbar/navbar.component';
 import { AboutComponent } from './sections/about/about.component';
 import { HomeComponent } from './sections/home/home.component';
@@ -14,12 +13,9 @@ import { MySkillsComponent } from './sections/my-skills/my-skills.component';
     AboutComponent,
     HomeComponent,
     ProjectsComponent,
-    MySkillsComponent
+    MySkillsComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
-  
 })
-export class AppComponent {
-  title = 'MyPortfolio';
-}
+export class AppComponent {}

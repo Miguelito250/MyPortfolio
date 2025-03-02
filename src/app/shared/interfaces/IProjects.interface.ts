@@ -1,5 +1,7 @@
+import { IConfigImgs } from "./IConfigImgs.interface";
+
 export interface IProjects {
-  urlImg: string[];
+  urlImg: IConfigImgs[];
   nameProject: string;
   description: string;
   urlWeb?: string;

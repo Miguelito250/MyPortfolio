@@ -1,4 +1,6 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import {
+  Component,
+} from '@angular/core';
 
 @Component({
   selector: 'app-home',
@@ -6,8 +8,12 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   imports: [],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
-  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class HomeComponent {
-  public myImg: string = 'https://lh3.googleusercontent.com/a/ACg8ocLKrA-LVsWaTRFe5OuGPo9EsmILT9wjGzYIwINdL_pyi06Rl7QP=s360-c-no'
+
+  phrases = [
+    "¡Hola Mundo!",
+    "El código limpio es fácil de leer y mantener",
+    "Programar es convertir ideas en realidad"
+  ];
 }

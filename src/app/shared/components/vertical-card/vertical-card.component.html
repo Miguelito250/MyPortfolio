@@ -1,6 +1,8 @@
 <div class="project-card">
   <div class="md:min-h-44 w-full">
-    <img [src]="project.urlImg[0]" class="rounded-md">
+    @if (project.urlImg) {
+      <img [src]="project.urlImg[0].url" [alt]="project.urlImg[0].alt" class="rounded-md h-full w-full">
+    }
   </div>
   <div>
     <h3 class="text-lg font-bold mb-2 mt-2">{{project.nameProject}}</h3>
