@@ -13,7 +13,7 @@ export class HomeComponent {
 
   phrases = [
     "¡Hola Mundo!",
-    "El código limpio es fácil de leer y mantener",
-    "Programar es convertir ideas en realidad"
+    "El código limpio es fácil de leer y mantener.",
+    "Programar es convertir ideas en realidad."
   ];
 }
